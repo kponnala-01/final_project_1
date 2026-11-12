@@ -5,13 +5,18 @@ from dataclasses import dataclass
 
 
 hide_debug_information()
-set_website_title("Your Drafter Website")
+set_website_title("Word counter")
 set_website_framed(False)
+
 
 
 @dataclass
 class State:
-    pass
+    list: list[str]
+    list_two: list[str]
+    longest_text: list[str]
+    Total_words: int
+    Average_word: int
 
 
 @route
