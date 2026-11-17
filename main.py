@@ -25,7 +25,9 @@ class Text:
 
 @route
 def home_page(state: State)->Page:
-    return index(state) #change later
+    return Page(state,[
+        Header("Home page"),
+        Button("Home","index")])
 @route
 def text_display(state:State)->Page:
     return 1
